@@ -8,7 +8,7 @@ const meta = {
   component: Button,
   tags: ['autodocs'],
   argTypes: {
-    
+    label: "Button"
   },
 } satisfies Meta<typeof Button>;
 
@@ -18,7 +18,25 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    label: 'Button',
+    label: 'Primary',
+    variant: "contained",
+    color: "primary",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    label: 'Secondary',
+    variant: "contained",
+    color: "secondary",
+  },
+};
+
+export const Success: Story = {
+  args: {
+    label: 'Success',
+    variant: "contained",
+    color: "success",
   },
 };
 
