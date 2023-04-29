@@ -9,7 +9,15 @@ interface StatCardProps {
   sublabelColor?: 'primary' | 'secondary' | 'error';
 }
 
-export const StatCard = ({ header, label, labelColor = 'primary', sublabel, sublabelColor = 'secondary', backgroundColor = "#fff", ...props}: StatCardProps) => {
+export const StatCard = ({ 
+  header, 
+  label, 
+  labelColor = 'primary', 
+  sublabel, 
+  sublabelColor = 'secondary', 
+  backgroundColor = "#fff", 
+  ...props}: StatCardProps) => {
+
   return (
    <Card sx={{ minWidth: 275, backgroundColor: backgroundColor }}  {...props}>
         <CardContent>

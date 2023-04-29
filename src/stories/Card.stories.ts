@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { StatCard } from '../components/StatCard';
 
 const meta = {
-    title : 'StatCrad',
+    title : 'Card/StatCrad',
     component: StatCard,
     tags: ['autodocs'],
     argTypes: {
