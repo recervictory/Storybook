@@ -7,6 +7,7 @@ import { lightTheme, darkTheme } from '../src/theme';
 
 
 const preview: Preview = {
+ 
   decorators : [
     withThemeFromJSXProvider({
     themes: {

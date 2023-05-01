@@ -10,9 +10,10 @@ type ButtonBaseProps = Pick<MuiButtonProps, 'variant' | 'size' | 'color'>;
 
 // Use all except disableRipple
 // type ButtonBaseProps = Omit<MuiButtonProps, "disableRipple">;
-
+//* ADD NEW FUNCTIONALITY
 export interface ButtonProps extends ButtonBaseProps {
   label: string;
+  onClick?: () => void;
 }
 
-export const Button = ({ label, ...rest }: ButtonProps) => <MuiButton {...rest}>{label}</MuiButton>;
+export const G4Button = ({ label, ...rest }: ButtonProps) => <MuiButton {...rest}  >{label}</MuiButton>;

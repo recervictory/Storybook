@@ -1,7 +1,7 @@
 import React from 'react';
 import './button.css';
 
-interface ButtonProps {
+interface G4ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
@@ -27,7 +27,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const G4Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
